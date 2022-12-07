@@ -5,6 +5,7 @@ import {
   FONTS,
   FONT_SIZE,
   FONT_WEIGHT,
+  IMAGES,
   LINE_HEIGHT,
 } from '../../constants';
 import {PaymentCardType} from '../../types';
@@ -14,7 +15,6 @@ import usePaymentScreen from '../../hooks/screens/usePaymentScreen';
 import EmptyStateScreen from '../EmptyStateScreen';
 import LoadingScreen from '../LoadingScreen';
 import {PaymentItem} from './components';
-import {useAppSelector} from '../../hooks';
 
 const PaymentScreen = () => {
   const {
@@ -32,8 +32,9 @@ const PaymentScreen = () => {
     return (
       <EmptyStateScreen
         title="No PaymentMethod yet"
-        content="You dont have any PaymentMethod yet"
+        content="You dont have any PaymentMethod "
         buttonText="Add Payment"
+        source={IMAGES.NO_NOTI}
         onButtonPress={onGotoAddPaymentScreen}
       />
     );
