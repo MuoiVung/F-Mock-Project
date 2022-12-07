@@ -34,7 +34,7 @@ const PaymentScreen = () => {
         title="No PaymentMethod yet"
         content="You dont have any PaymentMethod "
         buttonText="Add Payment"
-        source={IMAGES.NO_NOTI}
+        source={IMAGES.NO_ORDERS}
         onButtonPress={onGotoAddPaymentScreen}
       />
     );
